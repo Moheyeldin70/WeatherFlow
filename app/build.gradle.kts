@@ -7,6 +7,14 @@ plugins {
 android {
     namespace = "com.weatherflow.app"
     compileSdk = 36
+compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+kotlinOptions {
+    jvmTarget = "17"
+}
 
     defaultConfig {
         applicationId = "com.weatherflow.app"
